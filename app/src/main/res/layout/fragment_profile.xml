@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clouds">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Perfil"
+                android:textColor="@color/carrot"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".profile">
+
+            <!-- TODO: Update blank fragment layout -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textName1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:text="NOMBRE"
+                            android:textColor="@color/active"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:textAllCaps="true"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textLastname1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="Apellidos"
+                            android:textColor="@color/inactive"
+                            android:textSize="23sp"
+                            android:textAllCaps="true"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardsProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout7"
+                                android:layout_width="278dp"
+                                android:layout_height="96dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/IconImageView"
+                                android:layout_toRightOf="@+id/IconImageView"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textCategoria1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:text="Mis Datos"
+                                    android:textColor="@color/active"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textDescription1"
+                                    android:layout_width="259dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="Visualiza y modifica tus datos personales"
+                                    android:textColor="@color/inactive"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginRight="6dp"
+                                android:background="@drawable/ic_action_next" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    >
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardStores"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_toEndOf="@+id/IconImageView"
+                                android:layout_toRightOf="@+id/IconImageView"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textCategoria3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:text="Mis Tiendas"
+                                    android:textColor="@color/active"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textDescription3"
+                                    android:layout_width="242dp"
+                                    android:layout_height="58dp"
+                                    android:layout_centerVertical="true"
+                                    android:text="Visualiza y modifica los datos de tus tiendas"
+                                    android:textColor="@color/inactive"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginRight="6dp"
+                                android:background="@drawable/ic_action_next"  />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:background="@color/clouds"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="¿Desea eliminar este establecimiento?"
+            android:textColor="@color/active"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:text="Una vez lo elimine no podra recupearlo"
+            android:textColor="@color/inactive"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Cancelar"
+                android:textColor="@color/carrot"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/carrot"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Eliminar"
+                app:backgroundTint="@color/carrot"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/carrot"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

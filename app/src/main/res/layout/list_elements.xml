@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cards"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/IconImageView"
+                android:layout_toRightOf="@+id/IconImageView"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/ImageTienda"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/imagebutton"
+                        tools:srcCompat="@drawable/ic_action_user"/>
+
+                    <LinearLayout
+                        android:layout_width="134dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="Hola"
+                            android:textColor="@color/active"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/textDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Mexico"
+                            android:textColor="@color/inactive"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ImageArrow"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_action_next"
+                        tools:srcCompat="@drawable/ic_action_next" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

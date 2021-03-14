@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/iniciogomarket">
+
+    <LinearLayout
+        android:layout_width="307dp"
+        android:layout_height="421dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="190dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="¡Bienvenido!"
+            android:textColor="@color/carrot"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:drawableLeft="@drawable/ic_action_user"
+                android:ems="10"
+                android:hint="Nombre de usuario"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:passwordToggleEnabled="true">
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_action_password"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textOlvidar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="¿Haz olvidado tu contraseña?"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/btnsignin"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="20dp"
+            android:text="Iniciar Sesión"
+            app:backgroundTint="@color/carrot"
+            app:cornerRadius="15dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ó" />
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Registrarse"
+            android:textColor="@color/carrot"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/carrot"
+            app:strokeWidth="2dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
